@@ -1,6 +1,6 @@
 {
     "properties": {
-        "roleName": "ces-app-role",
+        "roleName": "test-app-role",
         "description": "",
         "assignableScopes": [
             "/subscriptions/40034075-6b99-40d7-8c3f-41489a1dc430"
