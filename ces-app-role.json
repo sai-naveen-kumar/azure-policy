@@ -1,0 +1,70 @@
+{
+    "properties": {
+        "roleName": "ces-app-role",
+        "description": "",
+        "assignableScopes": [
+            "/subscriptions/40034075-6b99-40d7-8c3f-41489a1dc430"
+        ],
+        "permissions": [
+            {
+                "actions": [
+                    "Microsoft.Resources/subscriptions/read",
+                    "Microsoft.Insights/Metrics/Read",
+                    "Microsoft.Resources/subscriptions/resourceGroups/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/start/action",
+                    "Microsoft.Compute/virtualMachineScaleSets/powerOff/action",
+                    "Microsoft.Compute/virtualMachineScaleSets/restart/action",
+                    "Microsoft.Compute/virtualMachineScaleSets/deallocate/action",
+                    "Microsoft.Compute/virtualMachineScaleSets/manualUpgrade/action",
+                    "Microsoft.Compute/virtualMachineScaleSets/setOrchestrationServiceState/action",
+                    "Microsoft.Compute/virtualMachineScaleSets/instanceView/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/vmSizes/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/start/action",
+                    "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/powerOff/action",
+                    "Microsoft.Compute/virtualMachines/read",
+                    "Microsoft.Compute/virtualMachines/start/action",
+                    "Microsoft.Compute/virtualMachines/powerOff/action",
+                    "Microsoft.Compute/virtualMachines/reapply/action",
+                    "Microsoft.Compute/virtualMachines/redeploy/action",
+                    "Microsoft.Compute/virtualMachines/restart/action",
+                    "Microsoft.Compute/virtualMachines/instanceView/read",
+                    "Microsoft.Compute/virtualMachines/vmSizes/read",
+                    "Microsoft.Insights/AutoscaleSettings/Write",
+                    "Microsoft.Insights/AutoscaleSettings/Read",
+                    "Microsoft.Insights/AutoscaleSettings/Scaleup/Action",
+                    "Microsoft.Insights/AutoscaleSettings/Scaledown/Action",
+                    "Microsoft.Insights/AutoscaleSettings/ScaleupResult/Action",
+                    "Microsoft.Insights/AutoscaleSettings/ScaledownResult/Action",
+                    "Microsoft.Insights/AutoscaleSettings/PredictiveScaleupResult/Action",
+                    "Microsoft.Insights/AutoscaleSettings/PredictiveScaleup/Action",
+                    "Microsoft.DBforMySQL/flexibleServers/read",
+                    "Microsoft.DBforMySQL/flexibleServers/restart/action",
+                    "Microsoft.DBforMySQL/flexibleServers/stop/action",
+                    "Microsoft.DBforMySQL/flexibleServers/start/action",
+                    "Microsoft.DBforMySQL/flexibleServers/configurations/read",
+                    "Microsoft.DBforPostgreSQL/flexibleServers/read",
+                    "Microsoft.DBforPostgreSQL/flexibleServers/restart/action",
+                    "Microsoft.DBforPostgreSQL/flexibleServers/start/action",
+                    "Microsoft.DBforPostgreSQL/flexibleServers/stop/action",
+                    "Microsoft.ContainerService/containerServices/read",
+                    "Microsoft.ContainerService/managedClusters/read",
+                    "Microsoft.ContainerService/managedClusters/start/action",
+                    "Microsoft.ContainerService/managedClusters/stop/action",
+                    "Microsoft.ContainerService/managedClusters/agentPools/read",
+                    "Microsoft.ContainerService/managedClusters/agentPools/write",
+                    "Microsoft.ContainerService/managedClusters/write",
+                    "Microsoft.Network/publicIPAddresses/read",
+                    "Microsoft.Network/loadBalancers/read",
+                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/loadBalancerPools/read",
+                    "Microsoft.Storage/storageAccounts/read",
+                    "Microsoft.Compute/disks/read"
+                ],
+                "notActions": [],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ]
+    }
+}
