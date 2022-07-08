@@ -1,12 +1,8 @@
 {
-    "properties": {
-        "roleName": "test-app-role",
-        "description": "",
-        "assignableScopes": [
-            "/subscriptions/40034075-6b99-40d7-8c3f-41489a1dc430"
-        ],
-        "permissions": [
-            {
+          "Name": "ces-app-role",
+	      "AssignableScopes": [
+		  "/subscriptions/03986dec-30a6-459f-8652-c3e4518477a7"
+	        ],
                 "actions": [
                     "Microsoft.Resources/subscriptions/read",
                     "Microsoft.Insights/Metrics/Read",
@@ -65,6 +61,3 @@
                 "dataActions": [],
                 "notDataActions": []
             }
-        ]
-    }
-}
