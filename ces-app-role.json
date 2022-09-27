@@ -1,10 +1,9 @@
 {
-          "Name": "ces-app-role",
-	      "AssignableScopes": [
-		  "/subscriptions/03986dec-30a6-459f-8652-c3e4518477a7"
-	        ],
-                "actions": [
-                    "Microsoft.Resources/subscriptions/read",
+  "Name": "ces-app-role",
+  "IsCustom": true,
+  "Description": "uodated json",
+  "Actions": [
+    		    "Microsoft.Resources/subscriptions/read",
                     "Microsoft.Insights/Metrics/Read",
                     "Microsoft.Resources/subscriptions/resourceGroups/read",
                     "Microsoft.Compute/virtualMachineScaleSets/read",
@@ -56,8 +55,6 @@
                     "Microsoft.Network/loadBalancers/frontendIPConfigurations/loadBalancerPools/read",
                     "Microsoft.Storage/storageAccounts/read",
                     "Microsoft.Compute/disks/read"
-                ],
-                "notActions": [],
-                "dataActions": [],
-                "notDataActions": []
-            }
+  ],
+  "NotActions": [],
+}
