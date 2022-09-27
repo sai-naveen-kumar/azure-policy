@@ -9,7 +9,7 @@ SUBSCRIPTIONS=""
 SUBSCRIPTION_ID=""
 app_id=""
 CREDENTIALS=""
-ROLE_DEFINITION_URL="https://raw.githubusercontent.com/sai-naveen-kumar/azure-policy/main/ces-app-role.json"
+ROLE_DEFINITION_URL="https://s3.amazonaws.com/static.cloudearl.com/ces-app-role.json"
 
 
 confirm_jq_installed() {
@@ -107,11 +107,12 @@ compose_role_definition() {
   role_definition=$(get_role_definition)
   echo "${role_definition}" \
     | jq --arg sub "/subscriptions/${SUBSCRIPTION_ID}" '.AssignableScopes[0] |= $sub' \
-    |jq '.Name = "ces-freemium-app-role"'
+    | jq --arg name "ces-app-role" '.Name = $name'
 }
 
 create_custom_role() {
   role=$1
+  echo "${role}"
   az role definition create \
     --role-definition "${role}" | jq -j '.roleName'
 } 
