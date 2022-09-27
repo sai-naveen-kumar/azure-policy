@@ -112,9 +112,9 @@ compose_role_definition() {
 
 create_custom_role() {
   role=$1
-  echo"--------------"
+  echo "--------------"
   echo "${role}"
-  echo"-----------"
+  echo "-----------"
   az role definition create \
     --role-definition "${role}" | jq -j '.roleName'
 } 
