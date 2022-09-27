@@ -131,7 +131,7 @@ assign_role_to_sp() {
 create_assign_role(){
 updated_role_definition=$(compose_role_definition)
 echo "${updated_role_definition}"
-role_name=$(create_custom_role "${updated_role_definition}" |jq -j '.Name')
+role_name=$(create_custom_role "${updated_role_definition}" | jq -j '.Name')
 echo "help2"
 echo "${role_name}"
 sleep 10s
