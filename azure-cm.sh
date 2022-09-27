@@ -114,7 +114,7 @@ create_custom_role() {
   role=$1
   echo "${role}"
   az role definition create \
-    --role-definition "${role}"
+    --role-definition "${role}" | jq -j ".roleName"
 } 
 
 assign_role_to_sp() {
@@ -137,7 +137,8 @@ echo "${role_name}"
 echo "-------------------------------------"
 echo "-------------------------------------"
 echo "-------------------------------------"
-role_name=${role_name} | jq -j ".roleName"
+# rolename=$(echo ${role_name} | jq -j ".roleName")
+# echo "${role_name} | jq -j ".roleName" "
 echo "${role_name}"
 sleep 10s
 assign_role_to_sp ${app_id} ${role_name}
