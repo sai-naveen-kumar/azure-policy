@@ -137,7 +137,7 @@ echo "${role_name}"
 echo "-------------------------------------"
 echo "-------------------------------------"
 echo "-------------------------------------"
-role_name=$(echo "${role_name}" | jq -j ".roleName")
+role_name=${role_name} | jq -j ".roleName"
 echo "${role_name}"
 sleep 10s
 assign_role_to_sp ${app_id} ${role_name}
