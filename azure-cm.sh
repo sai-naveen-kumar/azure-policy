@@ -114,12 +114,14 @@ create_custom_role() {
   role=$1
   echo "${role}"
   az role definition create \
-    --role-definition "${role}" | jq -j '.roleName'
+    --role-definition "${role}" | jq -j '.Name'
 } 
 
 assign_role_to_sp() {
   assignee=$1
   role_name=$2
+  echo "help"
+  echo "${assigne} ${role_name}"
   az role assignment create \
     --assignee "${assignee}" \
     --role "${role_name}" \
@@ -130,6 +132,8 @@ create_assign_role(){
 updated_role_definition=$(compose_role_definition)
 echo "${updated_role_definition}"
 role_name=$(create_custom_role "${updated_role_definition}")
+echo "help2"
+echo "${role_name}"
 sleep 10s
 assign_role_to_sp ${app_id} ${role_name}
 
